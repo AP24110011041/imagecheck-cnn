@@ -1,0 +1,9 @@
+{
+  "best_validation_loss": 0.18118542432785034,
+  "epochs_run": 16,
+  "training_seconds": 46.7,
+  "parameters": 964001,
+  "trainable_parameters": 36993,
+  "architecture": "MobileNetV3-Small frozen CNN + Dense(64) + Dense(1)",
+  "seed": 42
+}

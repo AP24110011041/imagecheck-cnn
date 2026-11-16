@@ -1,0 +1,64 @@
+{
+  "accuracy": 0.945,
+  "error_rate": 0.05500000000000005,
+  "precision": 0.978494623655914,
+  "recall": 0.91,
+  "f1": 0.9430051813471503,
+  "roc_auc": 0.990725,
+  "confusion_matrix": [
+    [
+      196,
+      4
+    ],
+    [
+      18,
+      182
+    ]
+  ],
+  "classification_report": {
+    "Real": {
+      "precision": 0.9158878504672897,
+      "recall": 0.98,
+      "f1-score": 0.9468599033816425,
+      "support": 200.0
+    },
+    "AI-generated": {
+      "precision": 0.978494623655914,
+      "recall": 0.91,
+      "f1-score": 0.9430051813471503,
+      "support": 200.0
+    },
+    "accuracy": 0.945,
+    "macro avg": {
+      "precision": 0.9471912370616018,
+      "recall": 0.9450000000000001,
+      "f1-score": 0.9449325423643964,
+      "support": 400.0
+    },
+    "weighted avg": {
+      "precision": 0.9471912370616019,
+      "recall": 0.945,
+      "f1-score": 0.9449325423643964,
+      "support": 400.0
+    }
+  },
+  "test_size": 400,
+  "threshold": 0.5,
+  "positive_class": "AI-generated",
+  "best_epoch": 6,
+  "parameters": 964001,
+  "trainable_parameters": 36993,
+  "architecture": "mobilenet_v3_small_transfer",
+  "evaluation_scope": "Fresh same-dataset shard audit; no training or checkpoint selection on these images",
+  "decision_policy": {
+    "uncertainty_margin": 0.15,
+    "inconclusive_count": 12,
+    "classified_count": 388,
+    "coverage": 0.97,
+    "accuracy_on_classified": 0.9536082474226805,
+    "note": "Heuristic score band, not calibrated confidence. Binary metrics above include ALL images at threshold 0.50."
+  },
+  "seed": 42,
+  "epochs_run": 16,
+  "training_seconds": 46.7
+}

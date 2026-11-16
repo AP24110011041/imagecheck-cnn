@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370">
+<defs><linearGradient id="bg"><stop stop-color="#112e2d"/><stop offset="1" stop-color="#235d4b"/></linearGradient></defs>
+<rect width="1200" height="370" rx="24" fill="url(#bg)"/>
+<g fill="none" stroke="#b8d98c" opacity=".23" stroke-width="2"><path d="M825 95 930 60 1040 110 1110 185 1040 265 930 305 825 250 770 180Z"/><path d="M825 95 930 185 1040 110M930 60 930 185 1110 185M1040 265 930 185 825 250M930 305 930 185 770 180"/></g>
+<g fill="#d8ed9d"><circle cx="825" cy="95" r="8"/><circle cx="930" cy="60" r="8"/><circle cx="1040" cy="110" r="8"/><circle cx="1110" cy="185" r="8"/><circle cx="1040" cy="265" r="8"/><circle cx="930" cy="305" r="8"/><circle cx="825" cy="250" r="8"/><circle cx="770" cy="180" r="8"/><circle cx="930" cy="185" r="16"/></g>
+<text x="66" y="86" fill="#d8ed9d" font-family="Arial,sans-serif" font-size="15" letter-spacing="5">SMALL CNN. MEASURABLE RESULTS.</text>
+<text x="62" y="167" fill="white" font-family="Arial,sans-serif" font-size="65" font-weight="bold">ImageCheck</text>
+<text x="66" y="217" fill="#d1dfd7" font-family="Arial,sans-serif" font-size="23">Real photographs. AI-generated pixels.</text>
+<text x="66" y="252" fill="#d1dfd7" font-family="Arial,sans-serif" font-size="23">A reproducible experiment, in your browser.</text>
+<rect x="66" y="291" width="194" height="35" rx="17" fill="#d8ed9d"/><text x="87" y="314" fill="#163c33" font-family="Arial,sans-serif" font-size="14" font-weight="bold">ON-DEVICE INFERENCE</text>
+</svg>

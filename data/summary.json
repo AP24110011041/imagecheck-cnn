@@ -1,0 +1,30 @@
+{
+  "dataset": "Parveshiiii/AI-vs-Real",
+  "url": "https://huggingface.co/datasets/Parveshiiii/AI-vs-Real",
+  "source_label_mapping": {
+    "0": "AI-generated",
+    "1": "Real"
+  },
+  "project_label_mapping": {
+    "0": "Real",
+    "1": "AI-generated"
+  },
+  "per_class": 833,
+  "splits": {
+    "train": 1166,
+    "validation": 250,
+    "test": 250
+  },
+  "rejected": {
+    "undersized": 33,
+    "duplicate": 2,
+    "invalid": 0
+  },
+  "seed": 42,
+  "limitations": "Subset of selected shards. Exact normalized-pixel duplicates removed; near-duplicates and source/generator overlap may remain. Random image split does not measure unseen-generator performance.",
+  "source_revision": "bce7ac5b95c36c5013389341b94c75aa44882165",
+  "prepared_image_size": [
+    256,
+    256
+  ]
+}

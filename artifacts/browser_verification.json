@@ -1,0 +1,9 @@
+{
+  "runtime": "onnxruntime-web 1.31.1, WebAssembly, one thread",
+  "tests": [
+    {"file": "1_actual_real.png", "displayed_ai_score": "0.1%", "decision": "Likely real photograph"},
+    {"file": "2_actual_ai.png", "displayed_ai_score": "99.2%", "decision": "Likely AI-generated"}
+  ],
+  "execution": "Browser UI against a static HTTP server, without Flask inference",
+  "limitation": "Displayed-score agreement on demo files is not a full browser evaluation of the audit dataset."
+}

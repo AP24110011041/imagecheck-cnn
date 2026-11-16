@@ -1,0 +1,9 @@
+torch>=2.6
+torchvision>=0.21
+Flask>=3.1
+Pillow>=11
+numpy>=2
+scikit-learn>=1.6
+matplotlib>=3.9
+requests>=2.32
+pyarrow>=19
