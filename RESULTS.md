@@ -35,7 +35,7 @@ The **same original 250-image test benchmark** gives:
 | Original small CNN, trained from scratch | 86.4% | 79.2% | 26 / 125 |
 | Frozen MobileNet CNN + trained dense head | 95.6% | 96.8% | 4 / 125 |
 
-This benchmark was reused for version comparison; do not present it as a new independent test. The replacement was selected by validation loss (0.1812 versus 0.3373) before candidate test/audit scores were computed. Selection details are in `candidate/selection.json`.
+This benchmark was reused for version comparison; do not present it as a new independent test. The replacement was selected by validation loss (0.1812 versus 0.3373) before candidate test/audit scores were computed. Selection details are in `artifacts/model_selection.json`.
 
 ### Original benchmark confusion matrix, upgraded model
 

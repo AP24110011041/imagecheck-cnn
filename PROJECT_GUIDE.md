@@ -12,7 +12,7 @@ python -m venv .venv
 .venv\Scripts\python app.py
 ```
 
-The trained checkpoint and prepared data are included. No retraining or download is necessary for the demo. Package versions from the completed run are in `environment.txt`.
+The trained checkpoint and demo images are included. No retraining or dataset download is necessary for the demo. Full training images are excluded from this GitHub package; use the preparation commands below to reconstruct them. Package versions from the completed run are in `environment.txt`.
 
 ## What changed after the first version
 
@@ -71,7 +71,7 @@ AI score
 
 **964,001 total parameters; 36,993 trained parameters.** Pretrained convolution weights and batch-normalization statistics remain frozen. The original ImageNet classification head is discarded. Only our two dense layers learn the AI-versus-real task.
 
-Weights come from [official TorchVision MobileNetV3](https://docs.pytorch.org/vision/main/models/mobilenetv3.html). The original 9.83 MB weights are included in `pretrained/` to enable offline retraining. The classifier checkpoint is `artifacts/best_model.pt`.
+Weights come from [official TorchVision MobileNetV3](https://docs.pytorch.org/vision/main/models/mobilenetv3.html). The original 9.83 MB pretrained weights are downloaded on the first training run; internet access is required for that download. The classifier checkpoint is `artifacts/best_model.pt`.
 
 ## Machine-learning steps
 
@@ -96,7 +96,7 @@ python app.py
 
 `train.py` retrains the transfer head on the prepared data, evaluates the saved benchmark and additional audit if available, then activates the checkpoint. Repeated evaluations reuse those datasets; do not describe them as newly unseen each time.
 
-For the original data preparation: `python download_data.py` downloads source shards 0 and 2 (~1.03 GB) with SHA-256 verification; `python prepare_data.py --source source_data --per-class 1000` reconstructs the original subset. The preparation script selects only shards 0 and 2 even if audit shards are present. The exact audit source files are recorded in its summary; prepared audit data is included.
+For the original data preparation: `python download_data.py` downloads source shards 0 and 2 (~1.03 GB) with SHA-256 verification; `python prepare_data.py --source source_data --per-class 1000` reconstructs the original subset. The preparation script selects only shards 0 and 2 even if audit shards are present. The exact audit source files are recorded in its summary; audit manifests and summary are included; audit image files must be reconstructed.
 
 `python train_transfer.py` trains a candidate without using test images. `python evaluate.py` evaluates that candidate on the original test split; `python evaluate.py --audit` evaluates the additional audit. The original scratch-CNN sources in `baseline/` are archival; the supported default training command is `python train.py`.
 
@@ -143,7 +143,7 @@ The original test set was reused to compare versions. The additional audit is fr
 
 ## Reproduce the additional audit
 
-The prepared audit is included. To reconstruct it from the pinned sources:
+The audit manifest and summary are included; the audit images must be reconstructed. To reconstruct it from the pinned sources:
 
 ```powershell
 python download_data.py --include-audit

@@ -1,0 +1,6 @@
+{
+  "selection_basis": "Validation loss only; before candidate test/audit scoring",
+  "baseline_best_validation_loss": 0.3372853941917419,
+  "candidate_best_validation_loss": 0.18118542432785034,
+  "selected": "mobilenet_v3_small_transfer"
+}
